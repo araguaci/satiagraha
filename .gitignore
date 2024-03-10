@@ -6,7 +6,6 @@ public/webviewer
 # misc
 .DS_Store
 package-lock.json
-yarn.lock
 /public/assets/webviewer/core
 /public/assets/webviewer/ui
 
@@ -17,7 +16,6 @@ yarn.lock
 
 # testing
 /coverage
-/dist
 
 # next.js
 /.next/

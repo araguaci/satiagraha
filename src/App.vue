@@ -1,5 +1,6 @@
 <template>
   <div>
+    <p>&nbsp;</p>
     <p>Que as gotas de chuva molhem suavemente o seu rosto.</p>
     <p>Que o vento suave refresque seu espírito.</p>
     <p>Que o sol ilumine o seu coração.</p>
@@ -11,44 +12,33 @@
     <p>Que a chuva caia de mansinho em seus campos.</p>
     <p>Até que nos encontremos de novo...</p>
     <p>Que Deus guarde você na palma de sua mão.</p>
-    <!-- https://tailwindcss.com/docs/background-color -->
-    <div class="my-3 flex items-center justify-center gap-x-6">
-        <a href="#" v-on:click="openPdf" class="rounded-md bg-violet-700 px-3.5 py-2.5 text-lg font-semibold text-slate-300 shadow-sm hover:bg-blue-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:bg-violet-700">Operação Satiagraha (Queiroz, Protógenes) </a>
+    <p>&nbsp;</p>    
+    <div class="roundcorner">
+      <h3>SANTO, SANTO, SANTO, É O SENHOR DAS HOSTES DO UNIVERSO</h3>
+      <h3>918197185 3396815 138 14111963 71042 419 814</h3>
     </div>
-    <Counter />
-    <p class="medium">SANTO, SANTO, SANTO, É O SENHOR DAS HOSTES DO UNIVERSO</p>
-    <p class="medium">918197185 3396815 138 14111963 71042 419 814</p>
   </div>
 </template>
 
 <script>
-import Counter from "./components/Counter.vue";
-export default {   
+export default {
   mounted() {
-    setTimeout(function () {
-      const pdfUrl = 'operacaosatiagraha.pdf'
-      window.open(`/${pdfUrl}`, '_self')
-    }, 10000);
+    this.openPdf()
   },
   methods: {
-    openPdf: function() {
-      const pdfUrl = 'operacaosatiagraha.pdf'
-      window.open(`/${pdfUrl}`, '_self')
+    openPdf() {
+      setTimeout(function () {
+        const file = 'operacaosatiagraha.pdf' // 将'your-file-name'替换为实际的文件名
+        window.open(`/${file}`, '_self')
+      }, 10000);      
     }
-  },
-  components: {
-    Counter,
-  },
-  created() {
-    document.title = "Operação Satiagraha (Queiroz, Protógenes) ";
-  } 
+  }
 }
 </script>
 <style>
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Ubuntu', sans-serif;
 }
 
 html,
@@ -67,14 +57,14 @@ body {
 
 html {
   background: hsla(143, 100%, 29%, 0.73);
-  background: linear-gradient(0deg, hsla(143, 100%, 29%, 1) 0%, hsla(52, 100%, 50%, 1) 50%, hsla(220, 100%, 23%, 1) 100%);
-  background: -moz-linear-gradient(0deg, hsla(143, 100%, 29%, 1) 0%, hsla(52, 100%, 50%, 1) 50%, hsla(220, 100%, 23%, 1) 100%);
-  background: -webkit-linear-gradient(0deg, hsla(143, 100%, 29%, 1) 0%, hsla(52, 100%, 50%, 1) 50%, hsla(220, 100%, 23%, 1) 100%);
+  background: linear-gradient(0deg, hsla(143, 100%, 29%, 1) 0%, hsla(52, 100%, 50%, 1) 50%,hsla(220, 100%, 23%, 1) 100%);
+  background: -moz-linear-gradient(0deg, hsla(143, 100%, 29%, 1) 0%, hsla(52, 100%, 50%, 1) 50%,hsla(220, 100%, 23%, 1) 100%);
+  background: -webkit-linear-gradient(0deg, hsla(143, 100%, 29%, 1) 0%, hsla(52, 100%, 50%, 1) 50%,hsla(220, 100%, 23%, 1) 100%);
   filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#FEDD00", endColorstr="#009639", GradientType=1);
 }
 
 div {
-  padding-top: 5px;
+  padding-top: 10px;
   margin: auto 10px;
   font-size: xx-large;
   align-items: center;
@@ -83,11 +73,24 @@ div {
 p {
   color: whitesmoke;
   text-align: center;
-  text-shadow: black 0.1em 0.1em 0.2em;
+  margin: 5px;
+  line-height: normal;
+  text-shadow: 2px 2px hsla(220, 100%, 23%, .5);
 }
- 
-.medium {
-  color: darkgrey;
+
+h3 {
+  text-align: center;
+  color: #fff;
   font-size: medium;
+}
+
+.roundcorner {
+  position:absolute;
+  border-radius: 10px; 
+  background-color: hsla(143, 100%, 29%, 1);
+  margin: auto;
+  width: 100%;
+  padding: 10px;
+  bottom: 10px;
 }
 </style>

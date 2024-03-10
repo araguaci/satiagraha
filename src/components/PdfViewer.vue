@@ -10,7 +10,7 @@ export default {
   methods: {
     openPdf() {
       const file = this.$route.params.file
-      const pdfUrl = '/operacaosatiagraha.pdf'
+      const pdfUrl = '/operacaosatiagraha' + file + '.pdf'
       // window.open(pdfUrl, '_blank')
     }
   }
