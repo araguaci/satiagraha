@@ -10,7 +10,7 @@ export default {
   methods: {
     openPdf() {
       const file = this.$route.params.file
-      const pdfUrl = '/a-cura-em-1minuto' + file + '.pdf'
+      const pdfUrl = '/operacaosatiagraha.pdf'
       // window.open(pdfUrl, '_blank')
     }
   }
