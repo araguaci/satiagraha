@@ -8,7 +8,7 @@ import 'virtual:windi.css'
 const router = createRouter({
   history: createWebHistory(),
   routes: [
-    { path: '/a-cura-em-1minuto', component: PdfViewer }
+    { path: '/operacaosatiagraha', component: PdfViewer }
   ]
 })
 

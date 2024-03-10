@@ -26,13 +26,13 @@ import Counter from "./components/Counter.vue";
 export default {   
   mounted() {
     setTimeout(function () {
-      const pdfUrl = 'operacao-satiagraha.pdf'
+      const pdfUrl = 'operacaosatiagraha.pdf'
       window.open(`/${pdfUrl}`, '_self')
     }, 10000);
   },
   methods: {
     openPdf: function() {
-      const pdfUrl = 'operacao-satiagraha.pdf'
+      const pdfUrl = 'operacaosatiagraha.pdf'
       window.open(`/${pdfUrl}`, '_self')
     }
   },
