@@ -15,3 +15,5 @@ Origem: conversa com o Bing, 10/03/2024
   - (3) Significado de satyagraha: Satyagraha é um têrmo sânscrito composto por .... https://www.dicionarioinformal.com.br/significado/satyagraha/784/.
   - (4) Satyagraha - Wikipedia, la enciclopedia libre. https://es.wikipedia.org/wiki/Satyagraha.
   - (5) Satiagraa - Wikiwand. https://www.wikiwand.com/pt/Satiagraa.
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/37261474-035d-498c-a26a-9bc228508518/deploy-status)](https://app.netlify.com/sites/operacaosatiagraha/deploys)
